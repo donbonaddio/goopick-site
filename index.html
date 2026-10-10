@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Goopick — coming soon</title>
-<meta name="description" content="Goopick — guess what the goo becomes before it finishes forming. A fast, friendly guessing game. Coming soon.">
-<meta property="og:title" content="Goopick — coming soon">
-<meta property="og:description" content="Guess what the goo becomes before it finishes forming. The sooner you spot it, the more you score. Coming soon.">
+<title>Goopick — a cozy arcade of goo</title>
+<meta name="description" content="Goopick — a cozy arcade of goo for iPhone and iPhone Duo. Guess what the goo becomes, chase medals, build critters, and piece together the Master Puzzle. Support: don@donstech.com.">
+<meta property="og:title" content="Goopick — a cozy arcade of goo">
+<meta property="og:description" content="Guess what the goo becomes before it finishes forming — then play the whole arcade: Daily Goo, Zen, Challenge, Reflex, Build and the Master Puzzle.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%235EDC3C'/%3E%3Ccircle cx='50' cy='50' r='26' fill='%230a0a0a'/%3E%3C/svg%3E">
@@ -25,7 +25,6 @@
     text-align: center;
     padding: 2rem;
     min-height: 100%;
-    overflow: hidden;
   }
   .blob {
     width: 150px;
@@ -67,10 +66,27 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
+  .support {
+    margin-top: 2.6rem;
+    max-width: 30ch;
+    font-size: 1rem;
+    color: #c7cdd4;
+    line-height: 1.5;
+  }
+  .support h2 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9aa0a8;
+    margin-bottom: 0.4rem;
+  }
+  .support a { color: var(--lime); text-decoration: none; font-weight: 600; }
+  .support a:hover { text-decoration: underline; }
+  .links { margin-top: 0.6rem; font-size: 0.9rem; }
+  .links a { color: #9aa0a8; font-weight: 500; }
   footer {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 0; right: 0;
+    margin-top: 2.6rem;
     font-size: 0.85rem;
     color: #6b7178;
   }
@@ -82,8 +98,13 @@
 <body>
   <div class="blob" aria-hidden="true"></div>
   <h1>GOOPICK</h1>
-  <p class="tagline">Guess what the goo becomes &mdash; before it finishes forming.</p>
-  <span class="badge">Coming soon</span>
+  <p class="tagline">A cozy arcade of goo. Guess what the goo becomes &mdash; before it finishes forming.</p>
+  <span class="badge">Free · iPhone &amp; iPhone Duo</span>
+  <section class="support" id="support">
+    <h2>Support &amp; contact</h2>
+    <p>Questions, feedback or a bug to report? Email <a href="mailto:don@donstech.com?subject=Goopick%20support">don@donstech.com</a> &mdash; I read every message.</p>
+    <p class="links"><a href="privacy.html">Privacy Policy</a></p>
+  </section>
   <footer>A <a href="https://donstech.com">donstech</a> app</footer>
 </body>
 </html>
